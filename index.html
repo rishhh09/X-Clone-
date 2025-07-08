@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=flash_on,group,home,mail,notifications,pending,person,search&display=block">
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 100;
+        }
+    </style>
+</head>
+
+<body class=" bg-black h-screen w-screen flex justify-center text-white scrollbar-none">
+
+    <!-- Left Side Bar Menu  -->
+    <div class="first bg-black w-[22%] border-r-1 border-gray-400 grid justify-center ml-10 relative h-screen">
+        <div class="left-side-bar">
+            <div class="logo mb-3 ml-[-11px] rounded-full cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0,0,256,256">
+                    <g fill="none" fill-rule="none" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <g transform="scale(5.33333,5.33333)">
+                            <path
+                                d="M38,42h-28c-2.209,0 -4,-1.791 -4,-4v-28c0,-2.209 1.791,-4 4,-4h28c2.209,0 4,1.791 4,4v28c0,2.209 -1.791,4 -4,4z"
+                                fill="#000000" fill-rule="evenodd"></path>
+                            <path d="M34.257,34h-6.437l-13.991,-20h6.437zM28.587,32.304h2.563l-11.651,-16.608h-2.563z"
+                                fill="#ffffff" fill-rule="nonzero"></path>
+                            <path d="M15.866,34l7.203,-8.344l-0.942,-1.249l-8.304,9.593z" fill="#ffffff"
+                                fill-rule="nonzero"></path>
+                            <path d="M24.45,21.721l0.905,1.289l7.781,-9.01h-2z" fill="#ffffff" fill-rule="nonzero">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+
+            <ul class="menu-items text-[21px] text-[#dde7e7] font-normal">
+                <li
+                    class="home-icon flex items-center gap-4 rounded-4xl cursor-pointer hover:bg-[#181818] transition duration-300 py-2">
+                    <div class="logos-left">
+                        <img src="resources/home_48dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg" alt="grok-icon"
+                            class="h-8 w-8">
+                    </div>
+                    Home
+                </li>
+                <li
+                    class="explore-icon flex items-center gap-4 rounded-4xl cursor-pointer hover:bg-[#181818] transition duration-300 py-2">
+                    <div class="logos-left">
+                        <div class="logos-left">
+                            <img src="resources/search_48dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg" alt="grok-icon"
+                                class="h-8 w-8">
+                        </div>
+                    </div>
+                    Explore
+                </li>
+                <li
+                    class="notification-icon flex items-center gap-4 rounded-4xl cursor-pointer hover:bg-[#181818] transition duration-300 py-2">
+                    <div class="logos-left">
+                        <div class="logos-left">
+                            <img src="resources/notifications_48dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg"
+                                alt="grok-icon" class="h-8 w-8">
+                        </div>
+                    </div>
+                    Notifications
+                </li>
+                <li
+                    class="message-icon flex items-center gap-4 rounded-4xl cursor-pointer hover:bg-[#181818] transition duration-300 py-2">
+                    <div class="logos-left">
+                        <div class="logos-left">
+                            <img src="resources/mail_48dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg" alt="grok-icon"
+                                class="h-8 w-8">
+                        </div>
+                    </div>
+                    Messages
+                </li>
+                <li
+                    class="grok-icon flex items-center gap-4 rounded-4xl cursor-pointer hover:bg-[#181818] transition duration-300 py-2">
+                    <div class="logos-left">
+                        <img src="resources/icons8-grok-white.svg" alt="grok-icon" class="h-7 w-7">
+                    </div>
+                    Grok
+                </li>
+                <li
+                    class="communities-icon flex items-center gap-4 rounded-4xl cursor-pointer hover:bg-[#181818] transition duration-300 py-2">
+                    <div class="logos-left">
+                        <div class="logos-left">
+                            <img src="resources/group_48dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg" alt="grok-icon"
+                                class="h-8 w-8">
+                        </div>
+                    </div>
+                    Communities
+                </li>
+                <li
+                    class="premium-icon flex items-center gap-4 rounded-4xl cursor-pointer hover:bg-[#181818] transition duration-300 py-2">
+                    <div class="logos-left">
+                        <img src="resources/icons8-x.com logo.svg" alt="x logo" class="h-7 w-7">
+                    </div>
+                    Premium
+                </li>
+                <li
+                    class="verified-icon flex items-center gap-4 rounded-4xl cursor-pointer hover:bg-[#181818] transition duration-300 py-2">
+                    <div class="logos-left">
+                        <div class="logos-left">
+                            <img src="resources/flash_on_48dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg" alt="grok-icon"
+                                class="h-8 w-8">
+                        </div>
+                    </div>
+                    Verified Orgs
+                </li>
+                <li
+                    class="profile-icon flex items-center gap-4 rounded-4xl cursor-pointer hover:bg-[#181818] transition duration-300 py-2">
+                    <div class="logos-left">
+                        <div class="logos-left">
+                            <img src="resources/person_48dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg" alt="grok-icon"
+                                class="h-8 w-8">
+                        </div>
+                    </div>
+                    Profile
+                </li>
+                <li
+                    class="more-icon flex items-center gap-4 rounded-4xl cursor-pointer hover:bg-[#181818] transition duration-300 py-2">
+                    <div class="logos-left">
+                        <div class="logos-left">
+                            <img src="resources/pending_48dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg" alt="grok-icon"
+                                class="h-8 w-8">
+                        </div>
+                    </div>
+                    More
+                </li>
+            </ul>
+
+            <div
+                class="btn py-4.5 px-25 text-center font-semibold text-black text-[18px] rounded-4xl bg-white mt-6 cursor-pointer">
+                <button type="sumbit">Post</button>
+            </div>
+
+            <div
+                class="profile flex p-2 rounded-4xl cursor-pointer hover:bg-[#181818] transition duration-300 absolute bottom-0">
+                <div class="profile-pic">
+                    <img src="resources/rish_resume.jpeg" alt="profile pic" class="w-11 h-11 rounded-full">
+                </div>
+                <div class="name flex justify-center items-center ml-4">
+                    <div>
+                        <h1 class="font-bold">Rishabh Singh</h1>
+                        <p class="text-[#aaaeb6]">@Rishabh13897769</p>
+                    </div>
+                    <div class="w-6 h-6 ml-5">
+                        <img src="resources/3dots_48dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg" alt="3-dots-icon">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Middele Scroll bar -->
+    <div class="second bg-black w-[42%] border-r-1 border-gray-500 h-screen hide-scrollbar overflow-y-scroll">
+        <!-- nav bar -->
+        <div class="nav border-b-1 border-gray-500 h-14 z-50 flex fixed top-0 w-[40.8%] bg-black/20 ">
+            <div class="w-1/2 h-full cursor-pointer font-bold hover:bg-[#181818]">
+                <div class="h-[92%]">
+                    <div class="h-full w-full flex items-center justify-center">
+                        <h1>For you</h1>
+                    </div>
+                    <div class="flex justify-center ">
+                        <div class="h-1 w-[100px] bg-blue-500 rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1/2 h-full cursor-pointer text-gray-400 hover:bg-[#181818] flex items-center justify-center">
+                <h1>Following</h1>
+            </div>
+        </div>
+
+        <div class="posting-card h-28 w-full border-b-1 border-gray-500 mt-14">
+            <div class="profile flex gap-3 p-5 ">
+                <div>
+                    <img src="resources/rish_resume.jpeg" alt="profile pic" class="w-11 h-11 rounded-full">
+                </div>
+                <div class="text-[20px] flex items-center">
+                    <p class="text-[#888a8e]">What's happening?</p>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="ml-19 flex">
+                    <div class="mr-4 w-5 h-5">
+                        <img src="resources/photos_icon.svg" alt="photos_icon">
+                    </div>
+                    <div class="mr-4 w-5 h-5">
+                        <img src="resources/gif_box.svg" alt="photos_icon">
+                    </div>
+                    <div class="mr-4 w-5 h-5">
+                        <img src="resources/smily_icon.svg" alt="photos_icon">
+                    </div>
+                    <div class="mr-4 w-5 h-5">
+                        <img src="resources/list_icon.svg" alt="photos_icon">
+                    </div>
+                    <div class="mr-4 w-5 h-5">
+                        <img src="resources/calendar_clock.svg" alt="photos_icon">
+                    </div>
+                    <div class="mr-4 w-5 h-5">
+                        <img src="resources/location_icon.svg" alt="photos_icon">
+                    </div>
+                </div>
+                <div
+                    class="btn py-2 px-6 text-center font-bold text-black text-[12px] rounded-4xl bg-white cursor-pointer mt-[-18px] ml-48">
+                    <button class="cursor-pointer" type="sumbit">Post</button>
+                </div>
+            </div>
+            <div class="scroll">
+                <div class="post-card border-b-1 border-gray-500">
+                    <div class="flex mt-4 gap-3">
+                        <div>
+                            <img src="resources/striver_dp.png" alt="profile pic" class="w-11 h-11 rounded-full">
+                        </div>
+                        <div class="text-[17px] flex items-center gap-2">
+                            <p class="text-white font-semibold">Striver | Building takeUforward</p>
+                            <p class="text-[#888a8e]">@striver_79 . jul 6</p>
+                        </div>
+                    </div>
+                    <div class="post ml-15 mr-8">
+                        <p>
+                            🚨We have taken a big product call!
+
+                            All purchases made post Aug 7, 2025 will have 3 years of validity, and they will have a
+                            chance to opt-in for 4 years as well at checkout.
+
+                            Our initial users trusted us when no-one did, and the way we give them back is, by
+                            offering them
+                        </p>
+                    </div>
+
+                    <div class="icons py-4">
+                        <div class="ml-15 flex gap-14">
+                            <div class="mr-4 w-5 h-5 flex gap-1.5">
+                                <img src="resources/chat_bubble.svg" alt="photos_icon">
+                                <p class="text-[12px] text-[#888a8e]">30</p>
+                            </div>
+                            <div class="mr-4 w-5 h-5 flex gap-1.5">
+                                <img src="resources/repost.svg" alt="photos_icon">
+                                <p class="text-[12px] text-[#888a8e]">16</p>
+
+                            </div>
+                            <div class="mr-4 w-5 h-5 flex gap-1.5">
+                                <img src="resources/heart.svg" alt="photos_icon">
+                                <p class="text-[12px] text-[#888a8e]">1k</p>
+
+                            </div>
+                            <div class="mr-4 w-5 h-5 flex gap-1.5">
+                                <img src="resources/bar_chart.svg" alt="photos_icon">
+                                <p class="text-[12px] text-[#888a8e]">1.7k</p>
+
+                            </div>
+                            <div class="mr-4 w-5 h-5">
+                                <img src="resources/bookmark.svg" alt="photos_icon">
+                            </div>
+                            <div class="mr-4 w-5 h-5">
+                                <img src="resources/upload.svg" alt="photos_icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-card border-b-1 border-gray-500">
+                    <div class="flex mt-4 gap-3">
+                        <div>
+                            <img src="resources/profile-3.png" alt="profile pic" class="w-11 h-11 rounded-full">
+                        </div>
+                        <div class="text-[17px] flex items-center gap-2">
+                            <p class="text-white font-semibold">Gagan🇮🇳 </p>
+                            <p class="text-[#888a8e]">@1no_aalsi_ . Jul 6</p>
+                        </div>
+                    </div>
+                    <div class="post ml-15 mr-8">
+                        <p>
+                            - 6 Billion Downloads <br>
+                            - Extra volume <br>
+                            - No Ads <br>
+                            <br>
+                            Legendary!
+                        </p>
+                        <img src="resources/vlc icon.png" alt="vlc icon" class="rounded-2xl pt-3">
+                    </div>
+
+                    <div class="icons py-4">
+                        <div class="ml-15 flex gap-14">
+                            <div class="mr-4 w-5 h-5 flex gap-1.5">
+                                <img src="resources/chat_bubble.svg" alt="photos_icon">
+                                <p class="text-[12px] text-[#888a8e]">30</p>
+                            </div>
+                            <div class="mr-4 w-5 h-5 flex gap-1.5">
+                                <img src="resources/repost.svg" alt="photos_icon">
+                                <p class="text-[12px] text-[#888a8e]">16</p>
+
+                            </div>
+                            <div class="mr-4 w-5 h-5 flex gap-1.5">
+                                <img src="resources/heart.svg" alt="photos_icon">
+                                <p class="text-[12px] text-[#888a8e]">1k</p>
+
+                            </div>
+                            <div class="mr-4 w-5 h-5 flex gap-1.5">
+                                <img src="resources/bar_chart.svg" alt="photos_icon">
+                                <p class="text-[12px] text-[#888a8e]">1.7k</p>
+
+                            </div>
+                            <div class="mr-4 w-5 h-5">
+                                <img src="resources/bookmark.svg" alt="photos_icon">
+                            </div>
+                            <div class="mr-4 w-5 h-5">
+                                <img src="resources/upload.svg" alt="photos_icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-card border-b-1 border-gray-500">
+                <div class="flex mt-4 gap-3">
+                    <div>
+                        <img src="resources/profile-2.png" alt="profile pic" class="w-11 h-11 rounded-full">
+                    </div>
+                    <div class="text-[17px] flex items-center gap-2">
+                        <p class="text-white font-semibold">cinesthetic.</p>
+                        <p class="text-[#888a8e]">@TheCinestheti · 17h</p>
+                    </div>
+                </div>
+                <div class="post ml-15 mr-8">
+                    <p>
+                        Since its release 11 years ago, just one hour and 31 minutes have passed on Miller's planet in
+                        Interstellar.
+                    </p>
+                    <img src="resources/intersteller pic.png" alt="intersteller pic" class="rounded-2xl pt-3">
+                </div>
+
+                <div class="icons py-4">
+                    <div class="ml-15 flex gap-14">
+                        <div class="mr-4 w-5 h-5 flex gap-1.5">
+                            <img src="resources/chat_bubble.svg" alt="photos_icon">
+                            <p class="text-[12px] text-[#888a8e]">30</p>
+                        </div>
+                        <div class="mr-4 w-5 h-5 flex gap-1.5">
+                            <img src="resources/repost.svg" alt="photos_icon">
+                            <p class="text-[12px] text-[#888a8e]">16</p>
+
+                        </div>
+                        <div class="mr-4 w-5 h-5 flex gap-1.5">
+                            <img src="resources/heart.svg" alt="photos_icon">
+                            <p class="text-[12px] text-[#888a8e]">1k</p>
+
+                        </div>
+                        <div class="mr-4 w-5 h-5 flex gap-1.5">
+                            <img src="resources/bar_chart.svg" alt="photos_icon">
+                            <p class="text-[12px] text-[#888a8e]">1.7k</p>
+
+                        </div>
+                        <div class="mr-4 w-5 h-5">
+                            <img src="resources/bookmark.svg" alt="photos_icon">
+                        </div>
+                        <div class="mr-4 w-5 h-5">
+                            <img src="resources/upload.svg" alt="photos_icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="third bg-black w-[36%]">
+        
+    </div>
+</body>
+
+</html>
