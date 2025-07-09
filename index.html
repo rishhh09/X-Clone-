@@ -22,7 +22,7 @@
 <body class=" bg-black h-screen w-screen flex justify-center text-white scrollbar-none">
 
     <!-- Left Side Bar Menu  -->
-    <div class="first bg-black w-[22%] border-r-1 border-gray-400 grid justify-center ml-10 relative h-screen">
+    <div class="first bg-black border-r-1 border-gray-400 relative h-screen overflow-y-scroll hide-scrollbar ml-[8px] w-[66px] md:ml-10 grid md:justify-center md:w-[24%]">
         <div class="left-side-bar">
             <div class="logo mb-3 ml-[-11px] rounded-full cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0,0,256,256">
@@ -47,12 +47,12 @@
 
             <ul class="menu-items text-[21px] text-[#dde7e7] font-normal">
                 <li
-                    class="home-icon flex items-center gap-4 rounded-4xl cursor-pointer hover:bg-[#181818] transition duration-300 py-2">
+                    class="home-icon  rounded-4xl cursor-pointer hover:bg-[#181818] transition duration-300 py-2 md:flex items-center gap-4">
                     <div class="logos-left">
                         <img src="resources/home_48dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg" alt="grok-icon"
                             class="h-8 w-8">
                     </div>
-                    Home
+                    <span class="hidden md:inline">Home</span>
                 </li>
                 <li
                     class="explore-icon flex items-center gap-4 rounded-4xl cursor-pointer hover:bg-[#181818] transition duration-300 py-2">
@@ -62,7 +62,7 @@
                                 class="h-8 w-8">
                         </div>
                     </div>
-                    Explore
+                    <span class="hidden md:inline">Explore</span> 
                 </li>
                 <li
                     class="notification-icon flex items-center gap-4 rounded-4xl cursor-pointer hover:bg-[#181818] transition duration-300 py-2">
@@ -72,7 +72,7 @@
                                 alt="grok-icon" class="h-8 w-8">
                         </div>
                     </div>
-                    Notifications
+                    <span class="hidden md:inline">Notifications</span> 
                 </li>
                 <li
                     class="message-icon flex items-center gap-4 rounded-4xl cursor-pointer hover:bg-[#181818] transition duration-300 py-2">
@@ -82,14 +82,14 @@
                                 class="h-8 w-8">
                         </div>
                     </div>
-                    Messages
+                    <span class="hidden md:inline">Messages</span> 
                 </li>
                 <li
                     class="grok-icon flex items-center gap-4 rounded-4xl cursor-pointer hover:bg-[#181818] transition duration-300 py-2">
                     <div class="logos-left">
                         <img src="resources/icons8-grok-white.svg" alt="grok-icon" class="h-7 w-7">
                     </div>
-                    Grok
+                    <span class="hidden md:inline"> Grok</span>
                 </li>
                 <li
                     class="communities-icon flex items-center gap-4 rounded-4xl cursor-pointer hover:bg-[#181818] transition duration-300 py-2">
@@ -99,14 +99,14 @@
                                 class="h-8 w-8">
                         </div>
                     </div>
-                    Communities
+                    <span class="hidden md:inline">Communities</span> 
                 </li>
                 <li
                     class="premium-icon flex items-center gap-4 rounded-4xl cursor-pointer hover:bg-[#181818] transition duration-300 py-2">
                     <div class="logos-left">
                         <img src="resources/icons8-x.com logo.svg" alt="x logo" class="h-7 w-7">
                     </div>
-                    Premium
+                    <span class="hidden md:inline">Premium</span> 
                 </li>
                 <li
                     class="verified-icon flex items-center gap-4 rounded-4xl cursor-pointer hover:bg-[#181818] transition duration-300 py-2">
@@ -116,7 +116,7 @@
                                 class="h-8 w-8">
                         </div>
                     </div>
-                    Verified Orgs
+                    <span class="hidden md:inline">Verified Orgs</span> 
                 </li>
                 <li
                     class="profile-icon flex items-center gap-4 rounded-4xl cursor-pointer hover:bg-[#181818] transition duration-300 py-2">
@@ -126,7 +126,7 @@
                                 class="h-8 w-8">
                         </div>
                     </div>
-                    Profile
+                    <span class="hidden md:inline">Profile</span> 
                 </li>
                 <li
                     class="more-icon flex items-center gap-4 rounded-4xl cursor-pointer hover:bg-[#181818] transition duration-300 py-2">
@@ -136,38 +136,37 @@
                                 class="h-8 w-8">
                         </div>
                     </div>
-                    More
+                    <span class="hidden md:inline">More</span> 
                 </li>
             </ul>
 
             <div
-                class="btn py-4.5 px-25 text-center font-semibold text-black text-[18px] rounded-4xl bg-white mt-6 cursor-pointer">
+                class="btn py-4.5 px-25 text-center font-semibold text-black text-[18px] rounded-4xl bg-white mt-4 cursor-pointer hidden md:absolute md:inline">
                 <button type="sumbit">Post</button>
             </div>
 
             <div
-                class="profile flex p-2 rounded-4xl cursor-pointer hover:bg-[#181818] transition duration-300 absolute bottom-0">
+                class="profile flex p-2 rounded-4xl cursor-pointer hover:bg-[#181818] transition duration-300 absolute mt-56 sm:mt-33">
                 <div class="profile-pic">
                     <img src="resources/rish_resume.jpeg" alt="profile pic" class="w-11 h-11 rounded-full">
                 </div>
-                <div class="name flex justify-center items-center ml-4">
-                    <div>
+                <div class="name flex justify-center items-center md:ml-4">
+                    <div class="hidden md:inline">
                         <h1 class="font-bold">Rishabh Singh</h1>
                         <p class="text-[#aaaeb6]">@Rishabh13897769</p>
                     </div>
-                    <div class="w-6 h-6 ml-5">
+                    <div class="w-6 h-6 ml-5 hidden md:inline">
                         <img src="resources/3dots_48dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg" alt="3-dots-icon">
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
     <!-- Middele Scroll bar -->
-    <div class="second bg-black w-[42%] border-r-1 border-gray-500 h-screen hide-scrollbar overflow-y-scroll">
+    <div class="second bg-black w-[450px] sm:w-[42%] border-r-1 border-gray-500 h-screen hide-scrollbar overflow-y-scroll overflow-x-hidden">
         <!-- nav bar -->
-        <div class="nav border-b-1 border-gray-500 h-14 z-50 flex fixed top-0 w-[40.8%] bg-black/20 ">
+        <div class="nav border-b-1 border-gray-500 h-14 z-50 flex fixed top-0 w-full pr-6 sm:w-[40.8%] bg-black/40 ">
             <div class="w-1/2 h-full cursor-pointer font-bold hover:bg-[#181818]">
                 <div class="h-[92%]">
                     <div class="h-full w-full flex items-center justify-center">
@@ -225,8 +224,8 @@
                         <div>
                             <img src="resources/striver_dp.png" alt="profile pic" class="w-11 h-11 rounded-full">
                         </div>
-                        <div class="text-[17px] flex items-center gap-2">
-                            <p class="text-white font-semibold">Striver | Building takeUforward</p>
+                        <div class="text-[12px] sm:text-[17px] flex items-center gap-0.5 sm:gap-3">
+                            <p class="text-white font-semibold">Striver | takeUforward</p>
                             <p class="text-[#888a8e]">@striver_79 . jul 6</p>
                         </div>
                     </div>
@@ -278,7 +277,7 @@
                         <div>
                             <img src="resources/profile-3.png" alt="profile pic" class="w-11 h-11 rounded-full">
                         </div>
-                        <div class="text-[17px] flex items-center gap-2">
+                        <div class="text-[12px] sm:text-[17px] flex items-center gap-2">
                             <p class="text-white font-semibold">Gagan🇮🇳 </p>
                             <p class="text-[#888a8e]">@1no_aalsi_ . Jul 6</p>
                         </div>
@@ -331,7 +330,7 @@
                     <div>
                         <img src="resources/profile-2.png" alt="profile pic" class="w-11 h-11 rounded-full">
                     </div>
-                    <div class="text-[17px] flex items-center gap-2">
+                    <div class="text-[12px] sm:text-[17px] flex items-center gap-2">
                         <p class="text-white font-semibold">cinesthetic.</p>
                         <p class="text-[#888a8e]">@TheCinestheti · 17h</p>
                     </div>
@@ -378,7 +377,7 @@
     </div>
 
     <!-- Third box  -->
-    <div class="third bg-black w-[36%] h-screen overflow-y-scroll hide-scrollbar">
+    <div class="third bg-black w-0 sm:w-[200px] md:w-[34%] h-screen overflow-y-scroll hide-scrollbar hidden sm:inline">
         <div class="flex justify-center pt-2">
             <div class="search-bar h-11 w-[350px] border border-gray-400 rounded-full flex items-center">
                 <div class="search-icon px-3">
@@ -389,8 +388,8 @@
             </div>
         </div>
 
-        <div class="flex justify-center mt-15">
-            <div class="border border-gray-500 rounded-2xl h-80 w-[350px] pl-3">
+        <div class="flex justify-center mt-15 ">
+            <div class="border border-gray-500 rounded-2xl h-105 md:h-80 w-[180px] md:w-[300px] pl-3">
                 <div>
                     <h1 class="font-bold text-[20px] p-3">What's happening</h1>
                 </div>
@@ -407,7 +406,7 @@
                         </div>
                     </div>
 
-                    <div class="w-6 h-6 ml-50">
+                    <div class="w-6 h-6 ml-30">
                         <img src="resources/3dots_48dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg" alt="3-dots-icon">
                     </div>
                 </div>
@@ -425,7 +424,7 @@
                         </div>
                     </div>
 
-                    <div class="w-6 h-6 ml-50">
+                    <div class="w-6 h-6 ml-13">
                         <img src="resources/3dots_48dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg" alt="3-dots-icon">
                     </div>
                 </div>
@@ -443,7 +442,7 @@
                         </div>
                     </div>
 
-                    <div class="w-6 h-6 ml-50">
+                    <div class="w-6 h-6 ml-30">
                         <img src="resources/3dots_48dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg" alt="3-dots-icon">
                     </div>
                 </div>
@@ -452,12 +451,12 @@
         </div>
 
         <div class="flex justify-center mt-16 mb-10">
-            <div class="border border-gray-500 rounded-2xl h-70 w-[350px] pl-3">
+            <div class="border border-gray-500 rounded-2xl h-60 md:h-70 w-[180px] md:w-[300px] pl-1">
                 <div>
                     <h1 class="font-bold text-[20px] p-3">Who to follow</h1>
                 </div>
                 <div class="flex items-center">
-                    <div class="flex mt-4 gap-3">
+                    <div class="flex mt-4 gap-1">
                         <div>
                             <img src="resources/profile-2.png" alt="profile pic" class="w-11 h-11 rounded-full">
                         </div>
@@ -468,13 +467,13 @@
                     </div>
 
                     <div
-                        class="btn py-[8px] px-[20px] text-center font-bold text-black text-[14px] rounded-4xl bg-white cursor-pointer ml-[75px]">
+                        class="btn py-[8px] px-[14px] text-center font-bold text-black text-[14px] rounded-4xl bg-white cursor-pointer ml-[65px] hidden md:inline">
                         <button type="sumbit">Follow</button>
                     </div>
                 </div>
 
                 <div class="flex items-center">
-                    <div class="flex mt-4 gap-3">
+                    <div class="flex mt-4 gap-1">
                         <div>
                             <img src="resources/striver_dp.png" alt="profile pic" class="w-11 h-11 rounded-full">
                         </div>
@@ -485,13 +484,13 @@
                     </div>
 
                     <div
-                        class="btn py-[8px] px-[20px] text-center font-bold text-black text-[14px] rounded-4xl bg-white cursor-pointer ml-[100px]">
+                        class="btn py-[8px] px-[14px] text-center font-bold text-black text-[14px] rounded-4xl bg-white cursor-pointer ml-[90px] hidden md:inline">
                         <button type="sumbit">Follow</button>
                     </div>
                 </div>
 
                 <div class="flex items-center">
-                    <div class="flex mt-4 gap-3">
+                    <div class="flex mt-4 gap-1">
                         <div>
                             <img src="resources/profile-3.png" alt="profile pic" class="w-11 h-11 rounded-full">
                         </div>
@@ -502,15 +501,12 @@
                     </div>
 
                     <div
-                        class="btn py-[8px] px-[20px] text-center font-bold text-black text-[14px] rounded-4xl bg-white cursor-pointer ml-[100px]">
+                        class="btn py-[8px] px-[14px] text-center font-bold text-black text-[14px] rounded-4xl bg-white cursor-pointer ml-[90px] hidden md:inline">
                         <button type="sumbit">Follow</button>
                     </div>
                 </div>
             </div>
         </div>
-
-
-    </div>
 
     </div>
 </body>
